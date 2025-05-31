@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-B" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisador de Risco Contratual IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg-dark': '#1C160C',       // Deep, dark brown (main background)
+              'brand-bg-medium': '#352A1B',     // Medium brown (e.g. card hover, or subtle variations)
+              'brand-bg-light': '#50402D',      // Lighter brown (card backgrounds, surfaces)
+              'brand-primary': '#4A3B2A',       // A core brown, less dark than bg-dark
+              'brand-secondary': '#6B553C',     // A supporting mid-tone brown
+              'brand-accent': '#D4AF37',        // Gold (CTAs, highlights, icons)
+              'brand-text-light': '#EAE0C8',    // Light beige/gold (primary text on dark backgrounds)
+              'brand-text-dark': '#1C160C',     // Dark text (for use on light accent backgrounds if any)
+              'brand-text-accent': '#D4AF37',   // Gold text (same as accent color, for special text)
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg-dark text-brand-text-light">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
